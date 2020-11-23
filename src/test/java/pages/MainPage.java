@@ -1,10 +1,9 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
@@ -18,7 +17,7 @@ public class MainPage {
     }
 
 
-    public static void cityButtonClick() {
+   public static void cityButtonClick() {
 
         driver.findElement(By.xpath("//button[@class='button--link header-cities__label']")).click();
 
@@ -63,11 +62,12 @@ public class MainPage {
         driver.quit();
     }
 
+    public static void getPage(String url) {
+        driver.get(url);
+    }
+
 }
 
-    /*
-    https://rozetka.com.ua/
-     */
 
 // //button[@class='button--link header-cities__label'] кнопка город
 
@@ -78,4 +78,4 @@ public class MainPage {
 // //div[@class='main-sidebar__block main-addresses'] адреса магазинов вот здесь город указан
 
 
- }
+
