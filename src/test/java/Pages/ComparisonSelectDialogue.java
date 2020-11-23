@@ -1,6 +1,6 @@
 package Pages;
 
-public class comparisonSelectDialogue {
+public class ComparisonSelectDialogue {
 
     /*
    //a[@class='comparison-modal__link'] нажать чтобы сравнить
